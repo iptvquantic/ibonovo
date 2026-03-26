@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_dark"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="32dp">
+
+        <!-- IBO QUANTIC Logo -->
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/logo_ibo_quantic"
+            android:scaleType="fitCenter"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Seu player premium de IPTV"
+            android:textColor="@color/text_secondary"
+            android:textSize="13sp"
+            android:layout_marginBottom="40dp"/>
+
+        <!-- Card form -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/bg_card"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="12dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="24dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="CONECTAR LISTA IPTV"
+                    android:textColor="@color/brand_primary"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:letterSpacing="0.15"
+                    android:layout_marginBottom="20dp"/>
+
+                <!-- URL -->
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="🌐  URL do Servidor"
+                    android:textColor="@color/text_secondary" android:textSize="12sp"
+                    android:layout_marginBottom="6dp"/>
+                <EditText
+                    android:id="@+id/etUrl"
+                    android:layout_width="match_parent" android:layout_height="52dp"
+                    android:hint="http://servidor.com:8080"
+                    android:textColor="@color/text_primary" android:textColorHint="@color/text_hint"
+                    android:background="@drawable/input_bg" android:padding="14dp"
+                    android:inputType="textUri" android:textSize="14sp" android:layout_marginBottom="16dp"/>
+
+                <!-- Username -->
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="👤  Usuário"
+                    android:textColor="@color/text_secondary" android:textSize="12sp"
+                    android:layout_marginBottom="6dp"/>
+                <EditText
+                    android:id="@+id/etUsername"
+                    android:layout_width="match_parent" android:layout_height="52dp"
+                    android:hint="seu_usuario"
+                    android:textColor="@color/text_primary" android:textColorHint="@color/text_hint"
+                    android:background="@drawable/input_bg" android:padding="14dp"
+                    android:inputType="text" android:textSize="14sp" android:layout_marginBottom="16dp"/>
+
+                <!-- Password -->
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="🔑  Senha"
+                    android:textColor="@color/text_secondary" android:textSize="12sp"
+                    android:layout_marginBottom="6dp"/>
+                <EditText
+                    android:id="@+id/etPassword"
+                    android:layout_width="match_parent" android:layout_height="52dp"
+                    android:hint="sua_senha"
+                    android:textColor="@color/text_primary" android:textColorHint="@color/text_hint"
+                    android:background="@drawable/input_bg" android:padding="14dp"
+                    android:inputType="textPassword" android:textSize="14sp" android:layout_marginBottom="16dp"/>
+
+                <!-- Playlist name -->
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="📋  Nome da lista"
+                    android:textColor="@color/text_secondary" android:textSize="12sp"
+                    android:layout_marginBottom="6dp"/>
+                <EditText
+                    android:id="@+id/etPlaylistName"
+                    android:layout_width="match_parent" android:layout_height="52dp"
+                    android:hint="Minha Lista"
+                    android:textColor="@color/text_primary" android:textColorHint="@color/text_hint"
+                    android:background="@drawable/input_bg" android:padding="14dp"
+                    android:inputType="text" android:textSize="14sp" android:layout_marginBottom="28dp"/>
+
+                <Button
+                    android:id="@+id/btnConnect"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:text="⚡  CONECTAR AGORA"
+                    android:textColor="@color/bg_dark"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:background="@drawable/btn_primary_bg"
+                    android:letterSpacing="0.08"/>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</ScrollView>
